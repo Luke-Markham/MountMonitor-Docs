@@ -76,5 +76,8 @@
   "description": "The official MountMonitor Help Center, providing clear guides and practical support for taxidermists and taxidermy businesses using MountMonitor.",
   "icons": {
     "library": "tabler"
+  },
+  "fonts": {
+    "family": "Inter"
   }
 }
