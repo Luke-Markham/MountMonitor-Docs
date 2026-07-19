@@ -1,13 +1,16 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "MountMonitor Help Center",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#0099f6",
+    "light": "#0099f6",
+    "dark": "#0099f6"
   },
-  "favicon": "/favicon.svg",
+  "favicon": {
+    "light": "/images/favicon.svg",
+    "dark": "/images/favicon.svg"
+  },
   "navigation": {
     "pages": [
       {
@@ -34,8 +37,9 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/mountmonitor-logo.svg",
+    "dark": "/images/mountmonitor-logo.svg",
+    "href": "https://app.mountmonitor.com"
   },
   "navbar": {
     "links": [
@@ -68,5 +72,9 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
+  },
+  "description": "The official MountMonitor Help Center, providing clear guides and practical support for taxidermists and taxidermy businesses using MountMonitor.",
+  "icons": {
+    "library": "tabler"
   }
 }
