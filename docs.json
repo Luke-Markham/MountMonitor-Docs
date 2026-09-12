@@ -12,26 +12,51 @@
     "dark": "/images/favicon.svg"
   },
   "navigation": {
-    "pages": [
+    "groups": [
       {
-        "group": "Getting Started",
+        "group": "Getting started",
         "pages": [
           "index",
           "quickstart"
+        ]
+      },
+      {
+        "group": "Bookings",
+        "pages": [
+          "bookings"
+        ]
+      },
+      {
+        "group": "Payments",
+        "pages": [
+          "deposits",
+          "payments",
+          "currency"
+        ]
+      },
+      {
+        "group": "Client updates",
+        "pages": [
+          "sms"
         ]
       }
     ],
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Open the app",
+          "href": "https://app.mountmonitor.com",
+          "icon": "layout-dashboard"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Client Portal",
+          "href": "https://portal.mountmonitor.com",
+          "icon": "browser"
+        },
+        {
+          "anchor": "Website",
+          "href": "https://www.mountmonitor.com",
+          "icon": "world"
         }
       ]
     }
@@ -45,13 +70,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:contact@mountmonitor.com"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "href": "https://app.mountmonitor.com"
     }
   },
   "contextual": {
@@ -68,9 +93,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://www.mountmonitor.com"
     }
   },
   "description": "The official MountMonitor Help Center, providing clear guides and practical support for taxidermists and taxidermy businesses using MountMonitor.",

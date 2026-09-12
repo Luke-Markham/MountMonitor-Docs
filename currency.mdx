@@ -1,0 +1,44 @@
+---
+title: "Currency"
+description: "How shop, client, and job currency work in MountMonitor"
+---
+
+Every amount on a job (prices, deposits, and payments) uses the **client's currency**. Your shop also has a default currency used for new clients and the public booking form.
+
+## Shop currency
+
+<Steps>
+  <Step title="Open General settings">
+    Go to **Settings**, then **General**.
+  </Step>
+  <Step title="Find Currency">
+    Under **Timezone, Currency & Measurement**, check **Currency**. This is your shop default.
+  </Step>
+</Steps>
+
+You cannot change shop currency yourself. If you need a different shop currency, email [contact@mountmonitor.com](mailto:contact@mountmonitor.com).
+
+## Client and job currency
+
+When you add a client, set **Currency** on the client. New jobs for that client use this currency for prices and payments.
+
+A job stays in the client currency already on it. You cannot move a job to a different client if that client uses another currency.
+
+Public bookings use your shop currency for new clients. If the form matches an existing client, the job keeps that client's currency.
+
+## Payments and reports
+
+Take payments in the same currency as the job. A split payment must use one currency, so you cannot combine jobs priced in different currencies in the same payment.
+
+Financial reports that use your shop (home) currency may leave out jobs in other currencies. Filter or review those jobs separately when you need the full picture.
+
+## Related guides
+
+<CardGroup cols={2}>
+  <Card title="Payments" icon="credit-card" href="/payments">
+    How job payments and split payments use currency
+  </Card>
+  <Card title="Bookings" icon="calendar" href="/bookings">
+    How new bookings pick up shop or existing-client currency
+  </Card>
+</CardGroup>
