@@ -1,0 +1,73 @@
+---
+title: "Payments"
+description: "How shops take job payments, including split payments and Stripe"
+---
+
+You take money against jobs after the job exists. Pending bookings cannot take a payment until you review and accept them.
+
+<Note>
+  The public booking form does not charge clients. See [Deposits](/deposits).
+</Note>
+
+## Take a payment on one job
+
+<Steps>
+  <Step title="Open the job">
+    Go to your jobs board and open an accepted job that still has a remaining balance.
+  </Step>
+  <Step title="Choose Take Payment">
+    Use **Take Payment** from the job actions menu. This option appears when MountMonitor Payments is connected for your shop.
+  </Step>
+  <Step title="Choose a payment method">
+    Select **Credit Card**, **Debit Card**, **Cash**, or **Check**.
+  </Step>
+  <Step title="Charge a card or record the payment">
+    For cards, you can charge through a connected **Card Reader** or by entering the card, when Stripe is connected. For cash or check, record the amount you received. Save the payment so the job balance updates.
+  </Step>
+</Steps>
+
+If Stripe is not connected, you can still track money on the job by recording cash and check payments. Card charging needs payments connected.
+
+## Split one payment across jobs
+
+A split payment is one real payment allocated across several jobs. Those jobs can belong to different clients (for example, someone paying for a friend).
+
+<Steps>
+  <Step title="Select the jobs">
+    On the jobs board, select the jobs that share this payment.
+  </Step>
+  <Step title="Take the combined payment">
+    Use the board **Take Payment** action. MountMonitor splits the amount across the selected jobs.
+  </Step>
+  <Step title="Adjust if needed">
+    Each job gets its own payment for its share. You can change how much each job receives, as long as the shares add up to the payment and no job is allocated more than it owes.
+  </Step>
+</Steps>
+
+A job cannot join a split when:
+
+- It is still a **pending** booking
+- Nothing is outstanding
+- It is priced in a different currency than the rest of the payment
+- It is on a payment plan (those payments follow the plan schedule)
+
+<Warning>
+  Refund a split payment as a whole. Do not edit or refund one job's share on its own. The shares have to keep adding up to the amount that was taken.
+</Warning>
+
+## Stripe and the Client Portal
+
+When Stripe is connected, you can charge cards in the shop (reader or keyed card) and clients can pay later in the Client Portal.
+
+Shop payment settings live under **Settings**, then **Payments**, when that area is available on your account. There you can review transactions, payouts, and card reader setup.
+
+## Related guides
+
+<CardGroup cols={2}>
+  <Card title="Deposits" icon="coins" href="/deposits">
+    How the deposit amount is calculated and when it is collected
+  </Card>
+  <Card title="Currency" icon="currency-dollar" href="/currency">
+    How client and job currency affect payments
+  </Card>
+</CardGroup>

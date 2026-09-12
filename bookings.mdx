@@ -1,0 +1,82 @@
+---
+title: "Bookings"
+description: "How the public booking form works, including existing client matching"
+---
+
+The public booking form is the intake page clients use to send work to your shop. It is **not** the Client Portal.
+
+Clients open a link such as `app.mountmonitor.com/book/your-shop`. After they submit, the booking lands on your jobs board as **pending** for staff review.
+
+## Set up your booking page
+
+<Steps>
+  <Step title="Build your price list first">
+    Open **Settings**, then **Price List**. The mounts and services on the booking form come from this list.
+  </Step>
+  <Step title="Open Bookings settings">
+    Go to **Settings**, then **Bookings**.
+  </Step>
+  <Step title="Set your booking URL">
+    Enter **Your Booking URL Slug** (lowercase letters, numbers, and hyphens). Save with **Generate** or **Update**. Your public link is `app.mountmonitor.com/book/` plus that slug.
+  </Step>
+  <Step title="Share the link or QR code">
+    Use **Copy URL** or **Download QR**. Clients can scan it in the shop, or you can put the link on your website or social pages.
+  </Step>
+</Steps>
+
+Optional booking page settings:
+
+- **Hide pricing** hides prices and totals from clients on the form
+- **Request address** shows or hides the address section
+- **Disclaimer Text** appears at the bottom of the form
+- Wildlife Resource Document collection, if you enable it, asks for WRD details on the form
+
+<Note>
+  Prices on the form are estimates. Clients are not charged when they submit. See [Deposits](/deposits).
+</Note>
+
+## What happens after a client submits
+
+1. MountMonitor creates a pending job from the form.
+2. You get a notification for the new booking.
+3. The booking appears on your jobs board as **pending**.
+4. Open the job and choose **Review Booking**. Check the client, items, and pricing, then accept or reject it.
+
+You cannot take a payment on a pending booking. Accept it first, then collect money on the job.
+
+## How existing clients are matched
+
+MountMonitor tries to attach the booking to a client you already have.
+
+<Steps>
+  <Step title="Match on full name">
+    The form name is compared in lowercase (first name, then last name) to clients already in your shop.
+  </Step>
+  <Step title="Confirm with email or phone">
+    If a name matches, MountMonitor also needs the same email **or** the same phone number. If neither contact detail matches, it treats this as a different person with the same name.
+  </Step>
+  <Step title="Create a new client if needed">
+    When there is no name match, or the name matches but email and phone do not, MountMonitor creates a new client from the form.
+  </Step>
+</Steps>
+
+Ask returning clients to use the same name, email, and phone you already have on file. A different spelling or a new phone number can create a second client record.
+
+## Booking form vs Client Portal
+
+| Public booking form | Client Portal |
+| --- | --- |
+| New intake from a shared link or QR code | Existing clients checking jobs they already have |
+| Creates a **pending** job for staff review | Shows job status, invoices, and portal payments |
+| Does not charge the client today | Clients can pay later when payments are connected |
+
+## Related guides
+
+<CardGroup cols={2}>
+  <Card title="Deposits" icon="coins" href="/deposits">
+    Why a booking can show a deposit without charging the card
+  </Card>
+  <Card title="Payments" icon="credit-card" href="/payments">
+    How to collect money after you accept the booking
+  </Card>
+</CardGroup>
