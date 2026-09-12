@@ -1,104 +1,293 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "MountMonitor Help Center",
+  "name": "MountMonitor",
   "colors": {
-    "primary": "#0099f6",
-    "light": "#0099f6",
-    "dark": "#0099f6"
+    "primary": "#0099F6",
+    "light": "#55BBF9",
+    "dark": "#007FCD"
   },
-  "favicon": {
-    "light": "/images/favicon.svg",
-    "dark": "/images/favicon.svg"
-  },
+  "favicon": "/favicon.svg",
   "navigation": {
     "groups": [
       {
-        "group": "Getting started",
+        "group": "Help topics",
         "pages": [
-          "index",
-          "quickstart"
-        ]
-      },
-      {
-        "group": "Bookings",
-        "pages": [
-          "bookings"
-        ]
-      },
-      {
-        "group": "Payments",
-        "pages": [
-          "deposits",
-          "payments",
-          "currency"
-        ]
-      },
-      {
-        "group": "Client updates",
-        "pages": [
-          "sms"
+          {
+            "group": "Start here",
+            "expanded": true,
+            "pages": [
+              "index",
+              "quickstart",
+              "getting-started/understand-mountmonitor",
+              "getting-started/find-your-way-around",
+              "getting-started/use-on-a-phone",
+              "getting-started/terms"
+            ]
+          },
+          {
+            "group": "Payments and invoices",
+            "expanded": false,
+            "pages": [
+              "payments/overview",
+              "payments/set-up-payments",
+              "payments/record-a-payment",
+              "payments/understand-deposits-and-balances",
+              "payments/set-up-a-card-reader",
+              "payments/take-a-card-payment",
+              "payments/enter-card-details",
+              "payments/request-an-online-payment",
+              "payments/split-a-payment-across-jobs",
+              "payments/create-a-payment-plan",
+              "payments/manage-a-payment-plan",
+              "payments/refund-a-payment",
+              "payments/correct-a-payment-record",
+              "payments/view-transactions-and-payouts",
+              "payments/set-up-processing-fees",
+              "payments/take-a-one-off-payment",
+              "payments/troubleshoot-a-payment",
+              {
+                "group": "Invoices",
+                "expanded": false,
+                "pages": [
+                  "invoices/overview",
+                  "invoices/send-an-invoice",
+                  "invoices/print-or-download-an-invoice",
+                  "invoices/customize-invoices",
+                  "invoices/set-your-tax-rate"
+                ]
+              },
+              {
+                "group": "Contracts and signatures",
+                "expanded": false,
+                "pages": [
+                  "contracts/overview",
+                  "contracts/create-a-contract-template",
+                  "contracts/add-a-contract-to-a-job",
+                  "contracts/collect-a-signature"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Jobs",
+            "expanded": false,
+            "pages": [
+              "jobs/overview",
+              "jobs/create-a-job",
+              "jobs/find-and-filter-jobs",
+              "jobs/update-a-job",
+              "jobs/change-the-client-on-a-job",
+              "jobs/organize-jobs-with-tags",
+              "jobs/add-notes-and-files",
+              "jobs/update-several-jobs",
+              "jobs/close-or-reopen-a-job",
+              "jobs/delete-a-job",
+              "jobs/check-job-history",
+              {
+                "group": "Mounts and services",
+                "expanded": false,
+                "pages": [
+                  "mounts-and-services/overview",
+                  "mounts-and-services/add-a-mount",
+                  "mounts-and-services/add-a-service",
+                  "mounts-and-services/record-instructions-and-photos",
+                  "mounts-and-services/update-mount-stages",
+                  "mounts-and-services/set-estimated-completion-dates",
+                  "mounts-and-services/edit-several-items"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Clients",
+            "expanded": false,
+            "pages": [
+              "clients/overview",
+              "clients/add-a-client",
+              "clients/find-clients-and-their-jobs",
+              "clients/update-a-client",
+              "clients/add-client-notes-and-files",
+              "clients/check-client-history",
+              "clients/archive-or-delete-a-client"
+            ]
+          },
+          {
+            "group": "Parts and locations",
+            "expanded": false,
+            "pages": [
+              "parts-and-locations/overview",
+              "parts-and-locations/set-up-locations",
+              "parts-and-locations/change-locations",
+              "parts-and-locations/split-or-combine-parts",
+              "parts-and-locations/find-parts",
+              "parts-and-locations/move-parts",
+              "parts-and-locations/scan-parts-in-and-out",
+              "parts-and-locations/move-several-parts",
+              "parts-and-locations/set-up-location-automation",
+              "parts-and-locations/fix-scanning-problems"
+            ]
+          },
+          {
+            "group": "Tags and printing",
+            "expanded": false,
+            "pages": [
+              "tags-and-printing/overview",
+              "tags-and-printing/print-mount-tags",
+              "tags-and-printing/connect-a-tag-printer",
+              "tags-and-printing/print-location-tags",
+              "tags-and-printing/print-job-cards",
+              "tags-and-printing/print-stock-tags",
+              "tags-and-printing/fix-printing-problems"
+            ]
+          },
+          {
+            "group": "Messages and client portal",
+            "expanded": false,
+            "pages": [
+              "messages/overview",
+              "messages/send-and-reply",
+              "messages/set-up-automatic-updates",
+              "messages/send-a-job-update",
+              "messages/check-message-delivery",
+              {
+                "group": "Client portal",
+                "expanded": false,
+                "pages": [
+                  "client-portal/overview",
+                  "client-portal/share-portal-access",
+                  "client-portal/customize-the-portal",
+                  "client-portal/explain-stages-to-clients",
+                  "client-portal/manage-client-photo-uploads"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Bookings",
+            "expanded": false,
+            "pages": [
+              "bookings/overview",
+              "bookings/set-up-a-booking-form",
+              "bookings/share-a-booking-form",
+              "bookings/review-a-booking"
+            ]
+          },
+          {
+            "group": "Stock, supplies, and expenses",
+            "expanded": false,
+            "pages": [
+              "inventory/overview",
+              "inventory/manage-stock",
+              "inventory/supplier-catalogs",
+              "inventory/create-orders",
+              "inventory/receive-orders",
+              "inventory/adjust-stock",
+              "inventory/materials-on-jobs",
+              {
+                "group": "Expenses",
+                "expanded": false,
+                "pages": [
+                  "expenses/overview",
+                  "expenses/log-expense",
+                  "expenses/review-job-costs"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Reports",
+            "expanded": false,
+            "pages": [
+              "reports/overview",
+              "reports/job-totals",
+              "reports/mounts-services-breakdown",
+              "reports/payment-report",
+              "reports/profit-loss",
+              "reports/cash-flow",
+              "reports/job-profitability",
+              "reports/form-ordering",
+              "reports/tanning-queue",
+              "reports/location-parts",
+              "reports/custom-reports"
+            ]
+          },
+          {
+            "group": "Shop setup",
+            "expanded": false,
+            "pages": [
+              "shop-setup/overview",
+              "shop-setup/business-details",
+              "shop-setup/price-list",
+              "shop-setup/mount-types",
+              "shop-setup/stages",
+              "shop-setup/job-templates",
+              {
+                "group": "Integrations",
+                "expanded": false,
+                "pages": [
+                  "integrations/overview",
+                  "integrations/quickbooks"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Team, account, and help",
+            "expanded": false,
+            "pages": [
+              "team/overview",
+              "team/manage-members",
+              "team/permissions",
+              {
+                "group": "Account and help",
+                "expanded": false,
+                "pages": [
+                  "account/overview",
+                  "account/sign-in",
+                  "account/get-help",
+                  "account/referrals"
+                ]
+              }
+            ]
+          }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Open the app",
-          "href": "https://app.mountmonitor.com",
-          "icon": "layout-dashboard"
-        },
-        {
-          "anchor": "Client Portal",
-          "href": "https://portal.mountmonitor.com",
-          "icon": "browser"
-        },
-        {
-          "anchor": "Website",
-          "href": "https://www.mountmonitor.com",
-          "icon": "world"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/images/mountmonitor-logo.svg",
-    "dark": "/images/mountmonitor-logo.svg",
-    "href": "https://app.mountmonitor.com"
+    ]
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
+        "label": "Get help",
         "href": "mailto:contact@mountmonitor.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
+      "label": "Open MountMonitor",
       "href": "https://app.mountmonitor.com"
     }
   },
   "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
+    "options": []
   },
-  "footer": {
-    "socials": {
-      "website": "https://www.mountmonitor.com"
+  "banner": {
+    "content": "Draft documentation — guides are being written.",
+    "dismissible": false,
+    "color": {
+      "light": "#0066A4",
+      "dark": "#003352"
     }
   },
-  "description": "The official MountMonitor Help Center, providing clear guides and practical support for taxidermists and taxidermy businesses using MountMonitor.",
-  "icons": {
-    "library": "tabler"
+  "seo": {
+    "metatags": {
+      "robots": "noindex, nofollow"
+    }
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "/"
   },
   "fonts": {
     "family": "Inter"

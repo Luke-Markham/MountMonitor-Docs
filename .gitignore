@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+.mintlify/
+*.log
+
+# Keep private research and its local checker out of the public repository.
+internal/
+scripts/

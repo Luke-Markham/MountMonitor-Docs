@@ -1,41 +1,96 @@
 ---
-title: "Quickstart"
-description: "Get your shop from sign-in to first booking and payment"
+title: "Quickstart: your first job"
+description: "Create a job for one client and one mount, then choose the next step for payments and tags."
+status: "draft"
+sidebarTitle: "Quickstart"
 ---
 
-Use this path the first time you set up MountMonitor. You will sign in, confirm shop details, publish a booking form, and know how money and client texts work.
+<Note>
+This is a draft guide. The complete walkthrough and screenshots are still being checked.
+</Note>
 
-## Before you begin
+Create a job to keep your client's details, the work they want, the price, and the mount's location together.
 
-You need:
+This guide follows one client bringing in one mount. For example, Alex Taylor brings in a deer for a shoulder mount. Use your own client's details and the work you have agreed with them.
 
-- A MountMonitor account
-- Access to [app.mountmonitor.com](https://app.mountmonitor.com)
-- Your shop name, address, and price list (even a short starter list is fine)
+## Before you start
 
-## Get started
+Have the client's name, a phone number or email address, the mount instructions, and the agreed price ready. Decide whether you require a deposit.
 
-<Steps>
-  <Step title="Sign in">
-    Open [app.mountmonitor.com](https://app.mountmonitor.com) and sign in. You land on your jobs board.
-  </Step>
-  <Step title="Confirm shop details">
-    Go to **Settings**, then **General**. Check **Taxidermy Business Name**, address, **Timezone**, and **Currency**. Shop currency can only be changed by support. Email [contact@mountmonitor.com](mailto:contact@mountmonitor.com) if it is wrong.
-  </Step>
-  <Step title="Add mounts and services">
-    Open **Settings**, then **Price List**. Add the items clients can book. Set a deposit on an item when you want one (fixed amount or percentage). The booking form uses this list.
-  </Step>
-  <Step title="Publish your booking form">
-    Open **Settings**, then **Bookings**. Set **Your Booking URL Slug**, then **Generate**. Copy the URL or download the QR code. Clients submit work here. Those bookings show as **pending** on your jobs board. They are not charged on the form. See [Bookings](/bookings) and [Deposits](/deposits).
-  </Step>
-  <Step title="Review a booking and take a payment">
-    Open a pending job and choose **Review Booking**. After you accept it, collect the deposit or balance with **Take Payment**. Split one payment across several jobs when someone is paying for more than one job. See [Payments](/payments).
-  </Step>
-  <Step title="Turn on client texts">
-    Open **Settings**, then **Client Portal**. Enable **Automatically SMS clients for new jobs & stage updates** if you want stage texts. See [SMS](/sms).
-  </Step>
-</Steps>
+Your shop needs a [stage](/shop-setup/stages) and a [storage location](/parts-and-locations/set-up-locations) to select for the mount. If those choices are missing, set them up or ask the person who manages your shop's account.
 
-<Tip>
-  Need help? Email [contact@mountmonitor.com](mailto:contact@mountmonitor.com).
-</Tip>
+## 1. Choose the client
+
+1. Open **New Job** in MountMonitor's navigation.
+2. In **Client**, start entering the client's name. Select their existing record if they have one.
+3. For a new client, select **+ Create** beside the name you entered. Check **First Name**, **Last Name**, and **Country**, and enter at least one of **Phone** or **Email**. Select **Add Client**.
+
+Check that the correct client is selected before adding the work. See [Add a client](/clients/add-a-client) for more detail.
+
+## 2. Add the mount
+
+1. Under **Mounts & Services**, select **Add Item**, then **Mount**.
+2. Check **Mount ID**, then choose **Species** and **Mount Type**. The mount ID identifies this mount within the job.
+3. Record the pose, direction, condition, and any other details you have agreed with the client. Use the mount's **Notes** for additional instructions.
+4. Check **Stage** and choose the stage that matches the work's current progress.
+5. In **Location**, choose where you are storing the mount. If more location choices appear, continue until you have selected the exact place.
+
+For a cape and antlers stored separately, use **Multiple Parts**, if available for your shop, to record each part and its location. See [Track separate parts](/parts-and-locations/split-or-combine-parts).
+
+Need to add another mount or separate work? Use **Add Item** again. The detailed guides cover [adding mounts](/mounts-and-services/add-a-mount) and [adding services](/mounts-and-services/add-a-service).
+
+## 3. Check the price and deposit
+
+1. In the mount, check **Price**. A matching entry in your shop's price list may fill this in.
+2. Check **Deposit**, including any value filled in for you. Enter the amount or percentage you require, or clear it if you do not require a deposit. For a percentage, review the calculated amount shown.
+3. Review the job total, any discount, and **Include Tax** before continuing.
+
+The **Deposit** field sets how much you require. It does not record money received or collect a payment.
+
+## 4. Choose the payment status
+
+Near the top of the job, select **Payment Status** to match the payment situation.
+
+| Your situation | Select |
+| --- | --- |
+| No money received and no deposit set | **Unpaid** |
+| A deposit is set but has not been received | **Awaiting Deposit** |
+| You need to record or collect the deposit as you save | **Deposit Received** |
+| You need to record or collect the full amount as you save | **Paid in Full** |
+
+If the client is paying the full amount upfront, clear the mount's **Deposit** before selecting **Paid in Full**.
+
+For **Deposit Received** or **Paid in Full**, MountMonitor asks for the payment when you select **Create Job**, if it has not already been recorded. Choosing a status alone does not collect money.
+
+In that payment step, **Log Payment** records money already received. **Charge Card** with **Process payment** collects a new card payment. Check the selected action before continuing so you do not charge a payment you have already taken.
+
+Follow the guide for [recording a payment](/payments/record-a-payment), [taking a card payment on a reader](/payments/take-a-card-payment), or [entering card details](/payments/enter-card-details) when you reach this step.
+
+## 5. Review and create the job
+
+1. Check the client, mount instructions, location, price, deposit, and payment status. Add shipping details or priority if needed.
+2. If your shop uses a contract, review **Selected Contract** before saving. See [Add a contract to a job](/contracts/add-a-contract-to-a-job). [Payment plans](/payments/create-a-payment-plan) have their own setup and collection steps.
+3. Check the client's contact details and [automatic update preferences](/messages/set-up-automatic-updates). Creating the job may send them an email or text with access to their client portal.
+4. Select **Create Job**. Complete any payment or correction prompt that appears.
+
+After a required payment is successfully entered, MountMonitor continues creating the job. Wait for **New job successfully created!**, then select the **Job #** link in that message to open it.
+
+## 6. Check the saved job
+
+Confirm that the saved job shows the right client, mount, location, total, and remaining balance. You can also find it in **Jobs**.
+
+Your first job is now recorded. Choose the next task you need:
+
+- [Print mount and part tags](/tags-and-printing/print-mount-tags) if tag printing is available for your shop.
+- [Send an invoice](/invoices/send-an-invoice) or [request an online payment](/payments/request-an-online-payment).
+- [Collect a contract signature](/contracts/collect-a-signature).
+- [Update the job](/jobs/update-a-job) if something needs changing.
+
+## If you get stuck
+
+- **A location is still required:** check for an unselected shelf, bin, or other choice beneath the main location. Check each part if you selected **Multiple Parts**.
+- **Invalid Payment Status:** check whether a deposit is set and whether any money has been received. Use the correction prompt to make the status match.
+- **A payment appears successful but the job has not saved:** check the payment result before trying again. See [Fix a payment problem](/payments/troubleshoot-a-payment).
+- **New Job or pricing is unavailable:** ask the person who manages your account to check your [access](/team/permissions) and any account limit shown.
+
+For the broader intake guide, see [Create a job](/jobs/create-a-job).

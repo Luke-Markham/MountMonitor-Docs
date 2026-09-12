@@ -2,26 +2,18 @@
 
 Shop-facing documentation for [MountMonitor](https://www.mountmonitor.com), built with [Mintlify](https://mintlify.com).
 
-This repo is the content source. The Help Center is not live yet.
+The review site is at [docs.mountmonitor.com](https://docs.mountmonitor.com). It contains the full documentation skeleton, a first-job walkthrough, and the Stages guide. Draft and placeholder notices identify content that is still being written or checked.
 
 ## Local preview
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint):
+Run `mint dev --no-open` from the repository root and open the local address it prints.
 
-```
-npm i -g mint
-```
+## Writing and checks
 
-From the repo root (where `docs.json` lives):
+Follow `AGENTS.md` for terminology and shop-facing boundaries. Use exact on-screen labels, plain language, and links between related tasks. Check the current product before presenting a draft as verified instructions.
 
-```
-mint dev
-```
+After structural changes, run `mint broken-links` and `mint validate`. Private source research and the local inventory checker are kept outside this public repository.
 
-Preview at `http://localhost:3000`.
+## Publishing
 
-## Writing
-
-Follow `AGENTS.md` for terminology, English-only copy, and shop-facing boundaries.
-
-Need help with Mintlify itself? See the [Mintlify documentation](https://mintlify.com/docs).
+Mintlify deploys changes pushed to `main`. Keep the draft banner and indexing restrictions while reviewing unfinished guides. Existing top-level guides remain available at their original URLs.
