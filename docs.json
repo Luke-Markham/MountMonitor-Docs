@@ -32,6 +32,7 @@
               "payments/overview",
               "payments/set-up-payments",
               "payments/record-a-payment",
+              "payments/take-a-job-payment-with-pos",
               "payments/understand-deposits-and-balances",
               "payments/set-up-a-card-reader",
               "payments/take-a-card-payment",
@@ -67,6 +68,20 @@
                   "contracts/collect-a-signature"
                 ]
               }
+            ]
+          },
+          {
+            "group": "Price list",
+            "expanded": false,
+            "pages": [
+              "shop-setup/price-list",
+              "price-list/add-a-mount-price",
+              "price-list/add-a-service-price",
+              "price-list/change-prices-and-deposits",
+              "price-list/adjust-several-prices",
+              "price-list/rename-or-remove-an-item",
+              "price-list/view-price-history",
+              "price-list/export-your-price-list"
             ]
           },
           {
