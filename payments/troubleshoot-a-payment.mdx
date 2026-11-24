@@ -1,24 +1,84 @@
 ---
 title: "Fix a payment problem"
-description: "Work out whether a payment failed, is still processing, or succeeded before a record-update error."
-status: "placeholder"
+description: ""
+status: "draft"
 ---
 
-<Note>
-This guide is being written. The topics below show what it will cover.
-</Note>
+Start by finding out whether money was collected. A declined card, an unfinished payment, and a successful charge that did not save to the job need different fixes.
 
-## Planned topics
+## You are not sure whether the card was charged
 
-- Check the current job payment history and transaction status before trying again.
-- Handle an unavailable reader, incomplete card details, decline, or cancelled payment.
-- Distinguish card collection failure from a successful charge followed by a job-save or accounting-sync warning.
-- Check missing payment-plan signature, saved method, initial payment and failed-instalment information.
-- Gather the job number, time, displayed error and payment amount when help is needed.
+1. Open the job's **Billing** tab and look for a payment matching the amount and time.
+2. Open **Settings → Payments → Transactions** and find the matching transaction. Check its status and details.
+3. Compare both records before trying again.
 
-## Related guides
+| What you find | What to do |
+| --- | --- |
+| A successful transaction and the correct payment on the job | The payment is recorded. Check the balance; do not charge it again. |
+| A successful transaction without the correct job payment | Contact support to check the missing job record. Do not make a replacement charge. |
+| A declined or failed transaction | Read the reason. Resolve it with the client before making a fresh attempt. |
+| A processing or unclear result | Wait for its result or ask support to check before another attempt. |
+| A QuickBooks warning after the job payment saved | Check the accounting update separately. Do not repeat the payment to fix QuickBooks. |
 
-- [Payments](/payments/overview)
-- [Take a card payment on a reader](/payments/take-a-card-payment)
-- [Manage a payment plan](/payments/manage-a-payment-plan)
-- [View transactions and bank payouts](/payments/view-transactions-and-payouts)
+Have the job number, amount, approximate time, and message ready when you [contact support](mailto:contact@mountmonitor.com).
+
+## The reader will not connect
+
+Use **Google Chrome** or **Microsoft Edge** on a computer. Check that the S710 reader is powered on and connected to the same shop network as the device running MountMonitor.
+
+Then follow [Troubleshoot your card reader](/payments/set-up-a-card-reader#troubleshoot-your-card-reader). It covers browser local-network permission, network-name lookup problems, and security software that can block the connection.
+
+If you have more than one reader, check which one this device has selected. If the reader is busy, finish the other payment first. Do not assume a connection error means a previous charge failed—check Transactions if that attempt's result is unclear.
+
+## The card is declined
+
+Read the message shown in the payment window. Ask the client to follow the reader's prompts or use another card or payment method if necessary.
+
+For **Manual Entry**, check the card number, expiry, and CVC in the secure card fields. Entering card details manually uses online processing rates, which differ from reader rates.
+
+Use the form's **Cancel** option while it is available if you need to stop a reader attempt. Check the final result before starting another payment.
+
+## Process is unavailable
+
+Check that:
+
+- **Payment Amount** is greater than zero and no higher than the balance allowed by the form.
+- The payment method is selected.
+- Required card details are complete for **Manual Entry**.
+- A reader is selected if the form asks you to choose one.
+
+For a [split payment](/payments/split-a-payment-across-jobs), also check that **Unallocated** is zero and **Paid By** is selected when required.
+
+## The fee or amount looks wrong
+
+Compare **Payment Amount**, **Processing Fee**, and the final total. The amount applied to the job and the amount charged can differ when a fee is added.
+
+Check whether you are using **Card Reader** or **Manual Entry**, and review [processing-fee settings](/payments/set-up-processing-fees). For a job balance question, see [Deposits and balances](/payments/understand-deposits-and-balances).
+
+## A split payment updated only some jobs
+
+If **Some jobs did not record this payment** appears, note the job numbers named in the message. The combined card charge may already have happened. Check each job and Transactions, then contact support to resolve the missing portions.
+
+If **Payments recorded, QuickBooks needs attention** appears, the job payments were recorded. Check the linked accounting records rather than taking the payment again.
+
+## A payment plan is not collecting
+
+Open the job's **Details** and **Billing** tabs. Check for an outstanding signature, initial payment, or saved payment method. Use **Requirements Due** to finish setup.
+
+If an instalment failed, read the failure message and retry information. If it is **Processing**, wait for the outcome. Updating the saved method can restart collection, so check the result before taking a separate payment. See [Manage a payment plan](/payments/manage-a-payment-plan).
+
+## The client cannot pay online
+
+Check that MountMonitor Payments is enabled, the job has a balance, and any required signatures or payment-method setup are complete. Check the client's saved contact details if they did not receive the reminder.
+
+See [Request an online payment](/payments/request-an-online-payment). If checkout failed or its outcome is unclear, check Transactions before asking the client to try again.
+
+## A payment or refund is missing from the bank
+
+A successful client payment and a bank payout are different records. Use [Transactions and payouts](/payments/view-transactions-and-payouts) to check the payout's destination, status, and timeline.
+
+For a client waiting on returned money, check the payment's refund history and [refund guidance](/payments/refund-a-payment). Their bank controls when the refund appears.
+
+## Still stuck?
+
+[Contact MountMonitor support](mailto:contact@mountmonitor.com) with the job number, amount, approximate time, device/browser, and the exact error or a screenshot. Let us know whether the job, Transactions, or the reader showed success. We can help you confirm what happened and what to do next.

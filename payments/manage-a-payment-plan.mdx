@@ -1,24 +1,79 @@
 ---
 title: "Manage a payment plan"
-description: "Review instalments, update allowed plan details, and resolve missing payment setup."
-status: "placeholder"
+description: ""
+status: "draft"
 ---
 
-<Note>
-This guide is being written. The topics below show what it will cover.
-</Note>
+Check what has been paid, what is due next, and whether the client's payment plan needs attention. Start on the job's **Billing** tab, where **Payment Plan** lists each instalment.
 
-## Planned topics
+## Read the schedule
 
-- View completed, due, processing, and failed instalments from the job.
-- Explain which remaining schedule details can be changed and which completed payments are locked.
-- Complete or update the saved payment method and review required signature or first-payment steps.
-- Explain removing a plan and the effects on future instalments and the remaining job balance.
-- Link failures to payment troubleshooting rather than manually duplicating a scheduled charge.
+| What you see | What it means |
+| --- | --- |
+| **Paid** | The instalment has completed. Check its payment entry in Billing. |
+| **Processing** | The payment is still being processed. Wait for its result before collecting the same instalment again. |
+| **Failed** | A payment attempt failed. Read the failure information and check whether another attempt is scheduled. |
+| A due date without a completion badge | The scheduled instalment is still outstanding. |
+| **Contract not active** | A due date is not yet available. Check the job's outstanding requirements. |
+
+Failure warning icons beside the plan provide more information about failed attempts. You can also open **Reports → Payment Plans** to review plans across your shop.
+
+## Finish missing setup
+
+1. Open the job and review **Outstanding Contract Requirements** under **Details**.
+2. Select **Requirements Due** on the job.
+3. Choose **In-Person Now** to complete the outstanding items with the client, or **Via Client Portal** to send a link.
+4. Complete the required signature, initial payment, and saved payment method shown.
+5. Return to **Billing** to check the schedule and payment results.
+
+A plan needs a saved method for future collection, even if the first instalment was cash or was taken on a different card. See [Create a payment plan](/payments/create-a-payment-plan#complete-the-requirements-after-saving) for those choices.
+
+## Change the remaining schedule
+
+1. Open the job and select **Edit Job**.
+2. Find **Payment Plan** near the bottom of the form.
+3. Change **Number of payments** or **Months between payments** where those controls are available.
+4. Review the recalculated remaining instalments and dates. Completed payments are kept, and paid or processing instalments are locked.
+5. Select **Update Job**, then check the saved plan in **Billing**.
+
+Some controls are unavailable after payments have been collected or the plan has finished. The editor does not provide a general way to move an individual payment date or freely edit every instalment amount. Contact support if the adjustment you need is not offered.
+
+Changing the schedule changes future collection. Agree it with the client before saving. Review any signed agreement separately if its payment terms also need updating.
+
+## Update the client's saved payment method
+
+1. Open the client's record.
+2. Under **Payment Method**, select **Update Payment Method**.
+3. Let the client complete the secure update form.
+4. Return to the job and check the payment method requirements, next instalment, and any payment result.
+
+The Payment Method card is shown when a method is already on file. For a missing method, use the job's **Requirements Due** flow instead.
+
+Updating a method can restart collection, including an initial or overdue instalment. Check the plan before taking an additional payment separately. The client can also use the payment-method update link provided in a failed-payment message.
+
+## If an instalment fails
+
+Read the failure information in **Billing** and any notification sent to the shop or client. MountMonitor retries failed scheduled payments and can pause collection after repeated failures. Follow the current message and schedule rather than making another manual charge to cover the same instalment.
+
+Update an expired or unusable payment method through the route above. If the result remains unclear, or an instalment is still **Processing**, [contact support](mailto:contact@mountmonitor.com) before attempting a replacement charge.
+
+## Remove a payment plan
+
+1. Open **Edit Job** and clear **Payment Plan**.
+2. Read **Remove Payment Plan?** and select **Remove Payment Plan** to remove it from your unsaved changes.
+3. Review the job and select **Update Job** to save.
+4. Check **Billing** and arrange how the remaining balance will be paid.
+
+To abandon the removal before saving, cancel editing the job. The confirmation warns that this is how to bring the plan back after removing it from the form.
+
+Removing a plan does not refund completed payments or cancel the work on the job. Money still owing remains owing. If a payment is already processing, check with support before removing or replacing the plan; removing it does not establish that an in-progress charge has stopped.
+
+## If a plan payment needs correcting or refunding
+
+Payments linked to a plan cannot be edited, deleted, or refunded through the ordinary payment menu. Contact support with the job number and the instalment involved so we can help with the appropriate correction.
 
 ## Related guides
 
-- [Payments](/payments/overview)
 - [Create a payment plan](/payments/create-a-payment-plan)
+- [Understand deposits and balances](/payments/understand-deposits-and-balances)
 - [Fix a payment problem](/payments/troubleshoot-a-payment)
-- [Collect a client signature](/contracts/collect-a-signature)

@@ -26,48 +26,46 @@
             ]
           },
           {
-            "group": "Payments and invoices",
+            "group": "Payments",
             "expanded": false,
             "pages": [
               "payments/overview",
               "payments/set-up-payments",
-              "payments/record-a-payment",
-              "payments/take-a-job-payment-with-pos",
-              "payments/understand-deposits-and-balances",
               "payments/set-up-a-card-reader",
-              "payments/take-a-card-payment",
-              "payments/enter-card-details",
+              "payments/set-up-processing-fees",
+              "payments/record-a-payment",
+              "payments/understand-deposits-and-balances",
+              "payments/take-a-job-payment-with-pos",
+              "payments/take-a-one-off-payment",
               "payments/request-an-online-payment",
               "payments/split-a-payment-across-jobs",
               "payments/create-a-payment-plan",
               "payments/manage-a-payment-plan",
-              "payments/refund-a-payment",
               "payments/correct-a-payment-record",
+              "payments/refund-a-payment",
               "payments/view-transactions-and-payouts",
-              "payments/set-up-processing-fees",
-              "payments/take-a-one-off-payment",
-              "payments/troubleshoot-a-payment",
-              {
-                "group": "Invoices",
-                "expanded": false,
-                "pages": [
-                  "invoices/overview",
-                  "invoices/send-an-invoice",
-                  "invoices/print-or-download-an-invoice",
-                  "invoices/customize-invoices",
-                  "invoices/set-your-tax-rate"
-                ]
-              },
-              {
-                "group": "Contracts and signatures",
-                "expanded": false,
-                "pages": [
-                  "contracts/overview",
-                  "contracts/create-a-contract-template",
-                  "contracts/add-a-contract-to-a-job",
-                  "contracts/collect-a-signature"
-                ]
-              }
+              "payments/troubleshoot-a-payment"
+            ]
+          },
+          {
+            "group": "Invoices",
+            "expanded": false,
+            "pages": [
+              "invoices/overview",
+              "invoices/send-an-invoice",
+              "invoices/print-or-download-an-invoice",
+              "invoices/customize-invoices",
+              "invoices/set-your-tax-rate"
+            ]
+          },
+          {
+            "group": "Contracts and signatures",
+            "expanded": false,
+            "pages": [
+              "contracts/overview",
+              "contracts/create-a-contract-template",
+              "contracts/add-a-contract-to-a-job",
+              "contracts/collect-a-signature"
             ]
           },
           {
@@ -287,7 +285,7 @@
     "options": []
   },
   "banner": {
-    "content": "Draft documentation — guides are being written.",
+    "content": "Draft documentation \u2014 guides are being written.",
     "dismissible": false,
     "color": {
       "light": "#0066A4",
@@ -306,5 +304,15 @@
   },
   "fonts": {
     "family": "Inter"
-  }
+  },
+  "redirects": [
+    {
+      "source": "/payments/take-a-card-payment",
+      "destination": "/payments/record-a-payment#take-a-payment-with-a-credit-card"
+    },
+    {
+      "source": "/payments/enter-card-details",
+      "destination": "/payments/record-a-payment#enter-card-details-manually"
+    }
+  ]
 }
