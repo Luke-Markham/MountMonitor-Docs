@@ -91,7 +91,6 @@
               "jobs/find-and-filter-jobs",
               "jobs/update-a-job",
               "jobs/change-the-client-on-a-job",
-              "jobs/organize-jobs-with-tags",
               "jobs/add-notes-and-files",
               "jobs/update-several-jobs",
               "jobs/close-or-reopen-a-job",
@@ -110,6 +109,16 @@
                   "mounts-and-services/edit-several-items"
                 ]
               }
+            ]
+          },
+          {
+            "group": "Tagging",
+            "expanded": false,
+            "pages": [
+              "tagging/overview",
+              "clients/organize-clients-with-tags",
+              "jobs/organize-jobs-with-tags",
+              "mounts-and-services/organize-mounts-with-tags"
             ]
           },
           {
@@ -285,7 +294,7 @@
     "options": []
   },
   "banner": {
-    "content": "Draft documentation \u2014 guides are being written.",
+    "content": "Draft documentation — guides are being written.",
     "dismissible": false,
     "color": {
       "light": "#0066A4",
